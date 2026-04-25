@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm install *)",
+      "WebSearch",
+      "Bash(npx kill-port *)",
+      "Bash(Remove-Item -Recurse -Force \"D:/Laptops Docs/Desktop/Furniture App/frontend/.next\" -ErrorAction SilentlyContinue)",
+      "Bash(npm run *)",
+      "Bash(gh auth *)",
+      "Bash(git --version)",
+      "Bash(git config *)"
+    ]
+  }
+}
