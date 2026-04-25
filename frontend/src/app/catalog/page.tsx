@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState, useCallback } from 'react';
+import { useEffect, useState, useCallback, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { furnitureApi, designRequestApi } from '@/lib/api';
 import FurnitureCard from '@/components/FurnitureCard';
@@ -17,7 +17,7 @@ const PRICE_RANGES = [
 
 interface Category { category_id: number; name: string; slug: string; }
 
-export default function CatalogPage() {
+function CatalogContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
 
@@ -356,5 +356,13 @@ export default function CatalogPage() {
         </div>
       </section>
     </div>
+  );
+}
+
+export default function CatalogPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-cream flex items-center justify-center">Loading...</div>}>
+      <CatalogContent />
+    </Suspense>
   );
 }
