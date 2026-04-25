@@ -102,7 +102,7 @@ export default function PortfolioPage() {
       <div className="mt-16 text-center bg-beige-50 rounded-3xl p-10">
         <h3 className="section-title text-2xl">Ready to Transform Your Space?</h3>
         <p className="text-earth-500 mt-3 mb-6">Let's discuss your vision and create something beautiful together.</p>
-        <a href="mailto:hello@maison.eg" className="btn-primary">Get in Touch</a>
+        <a href="mailto:hello@alemam.eg" className="btn-primary">Get in Touch</a>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import CartSidebar from '@/components/CartSidebar';
 import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
-  title: { default: 'Maison Furniture', template: '%s | Maison Furniture' },
+  title: { default: 'Al-Emam Furniture', template: '%s | Al-Emam Furniture' },
   description: 'Premium furniture for modern living. Shop ready-made & custom pieces.',
   keywords: ['furniture', 'home decor', 'custom furniture', 'interior design'],
 };

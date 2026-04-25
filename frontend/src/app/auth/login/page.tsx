@@ -37,7 +37,7 @@ export default function LoginPage() {
       >
         <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10">
           <div className="text-center mb-8">
-            <Link href="/" className="font-display text-3xl font-semibold text-bark">Maison</Link>
+            <Link href="/" className="font-display text-3xl font-semibold text-bark">Al-Emam</Link>
             <h1 className="text-xl font-semibold text-bark mt-4">Welcome back</h1>
             <p className="text-earth-500 text-sm mt-1">Sign in to your account</p>
           </div>

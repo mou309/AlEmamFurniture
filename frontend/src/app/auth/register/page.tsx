@@ -21,7 +21,7 @@ export default function RegisterPage() {
     setLoading(true);
     try {
       await register(form.name, form.email, form.password);
-      toast.success('Account created! Welcome to Maison.');
+      toast.success('Account created! Welcome to Al-Emam.');
       router.push('/');
     } catch (err: any) {
       toast.error(err.response?.data?.error || 'Registration failed.');
@@ -35,7 +35,7 @@ export default function RegisterPage() {
       <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} className="w-full max-w-md">
         <div className="bg-white rounded-3xl shadow-sm p-8 md:p-10">
           <div className="text-center mb-8">
-            <Link href="/" className="font-display text-3xl font-semibold text-bark">Maison</Link>
+            <Link href="/" className="font-display text-3xl font-semibold text-bark">Al-Emam</Link>
             <h1 className="text-xl font-semibold text-bark mt-4">Create your account</h1>
             <p className="text-earth-500 text-sm mt-1">Join thousands of happy homeowners</p>
           </div>

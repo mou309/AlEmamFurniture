@@ -54,7 +54,7 @@ export default function SharedRoomPage() {
         />
       </div>
       <div className="bg-white border-t border-beige-200 px-4 py-3 text-center text-sm text-earth-500">
-        Viewing a shared room layout from <Link href="/" className="text-sage-600 hover:underline">Maison Furniture</Link>.
+        Viewing a shared room layout from <Link href="/" className="text-sage-600 hover:underline">Al-Emam Furniture</Link>.
         <Link href="/virtual-room" className="ml-2 text-sage-600 hover:underline">Create your own →</Link>
       </div>
     </div>

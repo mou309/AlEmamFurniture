@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <span className="font-display text-2xl font-semibold text-cream">Maison</span>
+            <span className="font-display text-2xl font-semibold text-cream">Al-Emam</span>
             <p className="mt-3 text-sm text-beige-300 leading-relaxed">
               Thoughtfully crafted furniture for modern living. Quality that endures, design that inspires.
             </p>
@@ -51,13 +51,13 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2 text-beige-300"><FiMapPin size={14} /><span>Cairo, Egypt</span></li>
               <li className="flex items-center gap-2 text-beige-300"><FiPhone size={14} /><a href="tel:+201234567890" className="hover:text-cream transition-colors">+20 123 456 7890</a></li>
-              <li className="flex items-center gap-2 text-beige-300"><FiMail size={14} /><a href="mailto:hello@maison.eg" className="hover:text-cream transition-colors">hello@maison.eg</a></li>
+              <li className="flex items-center gap-2 text-beige-300"><FiMail size={14} /><a href="mailto:hello@alemam.eg" className="hover:text-cream transition-colors">hello@alemam.eg</a></li>
             </ul>
           </div>
         </div>
 
         <div className="mt-10 pt-6 border-t border-earth-700 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-beige-400">
-          <p>© {new Date().getFullYear()} Maison Furniture. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Al-Emam Furniture. All rights reserved.</p>
           <div className="flex gap-4">
             <Link href="/privacy" className="hover:text-cream transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-cream transition-colors">Terms of Service</Link>
