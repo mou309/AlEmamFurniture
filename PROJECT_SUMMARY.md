@@ -131,22 +131,21 @@ Furniture App/
 
 ## Runtime Status (آخر تحديث: 2026-04-26)
 
-| Server | Port | Status |
-|--------|------|--------|
-| Frontend (Next.js) | 3000 | ✅ شغال — `npm run dev` |
-| Backend (Express) | 5000 | ✅ شغال — `nodemon src/index.js` |
-| Firestore Database | - | ✅ شغال — Seeded with 15 products |
+| Server | URL | Status |
+|--------|-----|--------|
+| Frontend (Vercel) | https://al-emam-furniture.vercel.app | ✅ Live |
+| Backend (Railway) | https://alemamfurniture.up.railway.app | ✅ Live — محتاج FIREBASE_SERVICE_ACCOUNT_JSON |
+| Firestore Database | - | ✅ Seeded — 15 منتج + 4 portfolio |
 
-**`npm install` تم** في كلا المجلدين. السيرفرات جاهزة للتشغيل مباشرة.
-**`.env`** تم إعداده ببيانات Firestore وService Account.
-**Firestore** تم تفعيله وعمل Seed لـ 15 منتج و4 مشاريع Portfolio.
+**Deployment تم:** المشروع على GitHub (`mou309/AlEmamFurniture`) + Vercel + Railway.
+**المشكلة الحالية:** المنتجات مش بتظهر على الموقع — السبب إن `FIREBASE_SERVICE_ACCOUNT_JSON` لسه مش متضافش في Railway Variables.
 
 ### صفحات تم التحقق منها بصرياً
 | الصفحة | الحالة |
 |--------|--------|
 | `/` Home | ✅ Hero + Features + Categories + Footer كله شغال |
-| `/virtual-room` | ✅ Three.js 3D room محمل — floor/walls/grid ظاهرين |
-| `/catalog` | ✅ منتجات بتظهر بالصور الحقيقية عبر Mock data |
+| `/virtual-room` | ✅ Three.js 3D room محمل |
+| `/catalog` | ⚠️ بتظهر locally — على الموقع مش بتظهر (Firebase credentials ناقصة في Railway) |
 | `/catalog#custom-request` | ✅ فورم الطلب المخصص — اسم + موبايل + رفع صور |
 | `/auth/login` | ✅ مبنية |
 | `/auth/register` | ✅ مبنية |
@@ -154,11 +153,12 @@ Furniture App/
 | `/cart` | ✅ مبنية |
 | `/checkout` | ✅ مبنية |
 
-### إصلاحات وتحديثات تمت (2026-04-25 → 2026-04-26)
-- **`db.js`** — Mock data layer يتيح تشغيل الكاتالوج بدون PostgreSQL
-- **`designRequests.js`** — Multer integration لرفع الصور (حتى 5 صور / 10MB لكل صورة)
-- **`index.js`** — Static serving لـ `/uploads` + `unhandledRejection` handler
-- **`catalog/page.tsx`** — فورم الطلب المخصص محدّث: اسم + رقم موبايل + image upload مع preview
+### إصلاحات وتحديثات تمت (2026-04-26)
+- **Rebranding** — تغيير الاسم من Maison إلى Al-Emam Furniture في كل الصفحات
+- **`catalog/page.tsx`** — إضافة `Suspense` + `force-dynamic` لإصلاح Vercel build error
+- **GitHub** — رفع المشروع على `mou309/AlEmamFurniture` (main branch)
+- **Vercel** — Frontend deployed على `al-emam-furniture.vercel.app`
+- **Railway** — Backend deployed على `alemamfurniture.up.railway.app`
 
 ---
 
